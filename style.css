@@ -13,38 +13,41 @@ body {
     background-color: #FFFBF0;
 }
 
-nav {
-    background-color: rgba(85, 60, 154, 0.6); 
-    backdrop-filter: blur(5px); 
-    -webkit-backdrop-filter: blur(5px);
-    padding: 1.2rem 2rem;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: bold;
+header {
     position: sticky;
     top: 1rem;
     z-index: 100;
-    border-radius: 2rem; 
-    width: 80%; 
-    max-width: 400px; 
-    margin: 0 auto; 
+}
+
+header nav {
+    background-color: rgba(85, 60, 154, 0.6);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 1.2rem 2rem; 
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
     box-shadow: 0 4px 20px rgba(85, 60, 154, 0.3);
     border: 2px solid rgba(85, 60, 154, 0.3);
 }
 
-nav a {
+header nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 2rem; 
+    margin: 0 2rem;
     transition: all 0.3s ease;
 }
 
-nav a:hover {
+header nav a:hover {
     color: #000;
-    text-shadow: 0 0 10px rgba(167, 139, 250, 0.5); 
+    text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
 }
 
-.about-me{
+.about-me {
     display: grid;
     grid-auto-flow: column;
     justify-content: center;
@@ -54,48 +57,47 @@ nav a:hover {
     padding: 1rem 0;
 }
 
-.about-me div h4,
-.about-me div h2,
-.about-me div h3 {
+.about-me article h4,
+.about-me article h1,
+.about-me article h2 {
     margin: 0.5rem 0;
 }
 
-
-.about-me div h4 {
+.about-me article h4 {
     margin-bottom: 0.1rem;
     font-weight: normal;
     font-size: 1rem;
     color: #777;
 }
 
-.about-me div h2 {
+.about-me article h1 {
     margin: 0.25rem 0;
     font-weight: bold;
     font-size: 3rem;
 }
 
-.about-me div h3 {
+.about-me article h2 {
     margin-top: 0.25rem;
     margin-bottom: 1rem;
     font-weight: normal;
     font-size: 1.5rem;
 }
 
-.about-me div h3 span{
+.about-me article h2 span {
     color: #8B5CF6;
     font-weight: 600;
 }
 
-.about-me div p{
+.about-me article p {
     font-size: 1rem;
     max-width: 36rem;
 }
 
-#profile{
+#profile {
     width: 420px;
-    height: 420px;     
+    height: 420px;
     border-radius: 50%;
-    object-fit: cover;  
+    object-fit: cover;
     display: block;
     border: 2px solid #8B5CF6;
 }
@@ -118,14 +120,7 @@ nav a:hover {
     margin: 2rem auto;
 }
 
-.skills h2 {
-    text-align: center;
-    margin-bottom: 0rem;
-    font-size: 2rem;
-    color: #222;
-}
-
-.skills h3 {
+.skills section h3 {
     text-align: center;
     margin-top: 0.5rem;
     font-size: 1.2rem;
@@ -161,7 +156,7 @@ nav a:hover {
 }
 
 #list-skills li:hover {
-    background-color: #A78BFA; 
+    background-color: #A78BFA;
     transform: translateY(-2px);
 }
 
@@ -180,10 +175,10 @@ nav a:hover {
 
 .project-link {
     display: grid;
-    grid-template-columns: 200px 1fr;
-    gap: 5rem;
-    align-items: start;
-    padding: 1.5rem;
+    grid-template-columns: 250px 1fr; 
+    gap: 4rem; 
+    align-items: center;
+    padding: 0.5rem;
     border: 1px solid #8B5CF6;
     border-radius: 8px;
     background-color: #F3F0FF;
@@ -196,37 +191,38 @@ nav a:hover {
     transform: translateY(-5px);
     border: 1px solid #8B5CF6;
     background-color: rgba(243, 240, 255, 0.6);
-    backdrop-filter: blur(5px); 
+    backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    box-shadow: 0 10px 25px rgba(107, 70, 193, 0.2); 
+    box-shadow: 0 10px 25px rgba(107, 70, 193, 0.2);
 }
 
 #list-projects li {
     margin-bottom: 3rem;
 }
 
-#list-projects li img {
+#list-projects figure img {
     width: 250px;
     height: 150px;
     object-fit: cover;
     border-radius: 8px;
 }
 
-#list-projects li div {
+#list-projects article {
     display: flex;
     flex-direction: column;
 }
 
-#list-projects li h3 {
+#list-projects article h3 {
     margin: 0 0 0.5rem 0;
     font-size: 1.5rem;
     color: #333;
 }
 
-#list-projects li p {
-    margin: 0;
+#list-projects article p {
+    margin: 15px 0;
     color: #666;
     line-height: 1.5;
+    max-width: 45rem;
 }
 
 footer {
