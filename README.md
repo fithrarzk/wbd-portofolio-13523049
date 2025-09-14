@@ -1,4 +1,4 @@
-# Website Portofolio Muhammad Fithra Rizki 13523049
+# Website Portofolio
 
 **Link:** [https://portofolio-13523049.vercel.app](https://portofolio-13523049.vercel.app)
 
@@ -6,7 +6,7 @@ Website portofolio ini dibuat dari awal menggunakan **HTML dan CSS** tanpa frame
 
 ---
 
-## ✨ Fitur
+## Fitur
 - Struktur **HTML semantic** (`header`, `section`, `article`, `figure`, `footer`) agar mudah dipahami dan lebih aksesibel.  
 - Desain **responsif** dengan CSS Grid dan Flexbox.  
 - Navigasi **sticky** untuk memudahkan akses antar bagian.  
@@ -15,14 +15,16 @@ Website portofolio ini dibuat dari awal menggunakan **HTML dan CSS** tanpa frame
 
 ---
 
-## 📂 Struktur
-≈
+## Struktur
+
+```
 ├── index.html
 ├── style.css
 ├── /public # gambar & aset
 └── README.md
+```
 
 ---
 
-## 👤 Author
+## Author
 Muhammad Fithra Rizki - 13523049
